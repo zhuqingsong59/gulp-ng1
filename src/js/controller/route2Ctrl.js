@@ -1,0 +1,9 @@
+module.exports=[
+	'$scope','$state',
+	function($scope,$state){
+		console.log('route2');
+		$scope.goRoute1=function(){
+			$state.go('route1');
+		}
+	}
+]
