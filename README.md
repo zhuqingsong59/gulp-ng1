@@ -1,7 +1,7 @@
 # gulp-ng1
-基于gulp对angular1项目web部分做模块化处理的项目模版
-angular：v1.3.9
-angular-ui-router：v0.2.13
+	基于gulp对angular1项目web部分做模块化处理的项目模版
+	angular：v1.3.9
+	angular-ui-router：v0.2.13
 
 ## 目录
 	- gulpfile.js : gulp配置文件
