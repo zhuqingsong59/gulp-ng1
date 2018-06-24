@@ -109,6 +109,8 @@ del = require('del');
 								.pipe( rename('app.js') )
 								.pipe( gulp.dest( zen.dest + 'js/' ) )
 								.pipe( notify({ message: 'js success' }) );
+                gulp.src( zen.src + 'js/controller/**' )
+  								.pipe( gulp.dest( zen.dest + 'js/controller/' ) )
 						},
 						font: function(){
 							gulp.src( zen.src + 'font/**' )

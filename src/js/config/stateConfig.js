@@ -7,7 +7,9 @@ module.exports =[
 		//状态列表
 		const stateList= [
 			{state:'route1'},
-			{state:'route2'},
+			{state:'route2'}
+			// {state:'route3'},
+			// {state:'route4'}
 		];
 
 		//状态遍历配置 目前只考虑了最多两层路由的情况
@@ -29,6 +31,18 @@ module.exports =[
 					templateUrl: templatedir + state.state + ".html",
 					controller: state.state + 'Ctrl'
 				})
+				// $stateProvider.state(state.state,{
+				// 	url: '/'+state.state,
+				// 	params:state.params,
+        //   templateUrl: templatedir + state.state + ".html",
+        //   controller: state.state + 'Ctrl',
+				// 	resolve:{
+        //     loadMyCtrl: ['$ocLazyLoad', function($ocLazyLoad){
+        //             console.log(11);
+        //             return $ocLazyLoad.load('./js/controller/'+state.state + 'Ctrl'+'.js')
+        //     }]
+        //   }
+				// })
 			}
 		})
 		// 默认跳转路径
